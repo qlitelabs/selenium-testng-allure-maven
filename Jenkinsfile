@@ -12,4 +12,10 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            allure results: [[path: 'target/allure-results']]
+            deleteDir()
+        }
+    }
 }
