@@ -15,7 +15,7 @@ pipeline {
     post {
         always {
             allure results: [[path: 'target/allure-results']]
-            junit 'target/surefire-reports/*.xml'
+            junit allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml'
             deleteDir()
         }
     }
