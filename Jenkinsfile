@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean verify -P grid -DsuiteXmlFile=smoke.suite.xml -DproxyEnabled=false'
+                sh 'mvn clean verify -P grid -DsuiteXmlFile=smoke.suite.xml'
             }
         }
     }
