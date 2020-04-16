@@ -27,7 +27,7 @@
         <browser>chrome</browser>
         <threads>3</threads>
         <remote>false</remote>
-        <seleniumGridURL>http://192.168.1.9:4444/wd/hub</seleniumGridURL>
+        <seleniumGridURL>http://172.17.0.1:4444/wd/hub</seleniumGridURL>
         <platform/>
         <browserVersion/>
         <proxyEnabled>false</proxyEnabled>
