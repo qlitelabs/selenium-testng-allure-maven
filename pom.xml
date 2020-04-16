@@ -30,9 +30,9 @@
         <seleniumGridURL>http://172.17.0.1:4444/wd/hub</seleniumGridURL>
         <platform/>
         <browserVersion/>
-        <proxyEnabled>false</proxyEnabled>
-        <proxyHost>proxy.ctco.lv</proxyHost>
-        <proxyPort>8080</proxyPort>
+<!--        <proxyEnabled>false</proxyEnabled>-->
+<!--        <proxyHost>proxy.ctco.lv</proxyHost>-->
+<!--        <proxyPort>8080</proxyPort>-->
         <explicit.wait.sec>3</explicit.wait.sec>
     </properties>
 
