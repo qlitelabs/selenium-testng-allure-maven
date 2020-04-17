@@ -6,21 +6,27 @@ pipeline{
         }
     }
     stages{
-        stage('Build') {
+        stage('Test') {
             steps {
                 sh 'mvn clean verify -P grid -DsuiteXmlFile=smoke.suite.xml'
-                junit allowEmptyResults: true, testResults: 'target/surefire-reports/junitreports/*.xml'
             }
             post {
-                always {
-                    allure results: [[path: 'target/allure-results']]
-                    deleteDir()
-                }
                 success{
                     echo "========A execution successful========"
                 }
                 failure{
                     echo "========A execution failed========"
+                }
+            }
+        }
+        stage('Allure Reports') {
+            steps {
+                echo "===========Generating Allure Reports=============="
+            }
+            post {
+                always {
+                    allure results: [[path: 'target/allure-results']]
+                    deleteDir()
                 }
             }
         }
