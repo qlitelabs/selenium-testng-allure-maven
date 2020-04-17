@@ -9,7 +9,7 @@ pipeline{
         stage('Build') {
             steps {
                 sh 'mvn clean verify -P grid -DsuiteXmlFile=smoke.suite.xml'
-                junit allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml'
+                junit allowEmptyResults: true, testResults: 'target/surefire-reports/junitreports/*.xml'
             }
             post {
                 always {
