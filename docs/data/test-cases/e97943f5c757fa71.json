@@ -1,0 +1,137 @@
+{
+  "uid" : "e97943f5c757fa71",
+  "name" : "checkValidLogin",
+  "fullName" : "com.qlitelabs.tests.LoginTests.checkValidLogin",
+  "historyId" : "6ff2c4dca81958d6372efceeff03c64d",
+  "time" : {
+    "start" : 1587148994467,
+    "stop" : 1587148997527,
+    "duration" : 3060
+  },
+  "description" : "Validating Credentials",
+  "descriptionHtml" : "<p>Validating Credentials</p>\n",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "instantiateDriverObject",
+    "time" : {
+      "start" : 1587148988155,
+      "stop" : 1587148994185,
+      "duration" : 6030
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "statusDetails" : {
+      "flaky" : true
+    },
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6891b0b5591ee45c",
+      "name" : "takeScreenShot",
+      "source" : "6891b0b5591ee45c.png",
+      "type" : "image/png",
+      "size" : 83044
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "closeDriverObjects",
+    "time" : {
+      "start" : 1587148997535,
+      "stop" : 1587148997598,
+      "duration" : 63
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.qlitelabs.tests.LoginTests"
+  }, {
+    "name" : "testClass",
+    "value" : "com.qlitelabs.tests.LoginTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkValidLogin"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Smoke"
+  }, {
+    "name" : "suite",
+    "value" : "smoke"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.qlitelabs.tests.LoginTests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az54"
+  }, {
+    "name" : "thread",
+    "value" : "3552@fv-az54.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Check Credentials"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "MYISSUE-1",
+    "url" : "https://example.org/issue/MYISSUE-1",
+    "type" : "issue"
+  }, {
+    "name" : "MYISSUE-2",
+    "url" : "https://example.org/issue/MYISSUE-2",
+    "type" : "issue"
+  }, {
+    "name" : "TMS-123",
+    "url" : "https://example.org/tms/TMS-123",
+    "type" : "tms"
+  } ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e97943f5c757fa71.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}
