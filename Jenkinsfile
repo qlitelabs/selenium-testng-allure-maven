@@ -10,6 +10,7 @@ pipeline{
             steps {
                 sh 'mvn clean verify -P grid -DsuiteXmlFile=smoke.suite.xml'
                 archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
+                junit '**/target/surefire-reports/*.xml'
             }
             post {
                 success{
