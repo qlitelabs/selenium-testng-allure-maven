@@ -4,19 +4,19 @@
     "testRuns" : [ ],
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "time" : {
-      "start" : 1587159989424,
-      "stop" : 1587159992414,
-      "duration" : 2990,
-      "minDuration" : 2990,
-      "maxDuration" : 2990,
-      "sumDuration" : 2990
+      "start" : 1587161443034,
+      "stop" : 1587161465824,
+      "duration" : 22790,
+      "minDuration" : 22790,
+      "maxDuration" : 22790,
+      "sumDuration" : 22790
     }
   },
   "environment" : [ ],
@@ -27,9 +27,9 @@
       "name" : "Smoke",
       "statistic" : {
         "failed" : 0,
-        "broken" : 0,
+        "broken" : 1,
         "skipped" : 0,
-        "passed" : 1,
+        "passed" : 0,
         "unknown" : 0,
         "total" : 1
       }
@@ -38,9 +38,9 @@
   "history-trend" : [ {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     }
@@ -52,9 +52,9 @@
       "name" : "Check Credentials",
       "statistic" : {
         "failed" : 0,
-        "broken" : 0,
+        "broken" : 1,
         "skipped" : 0,
-        "passed" : 1,
+        "passed" : 0,
         "unknown" : 0,
         "total" : 1
       }
@@ -66,8 +66,19 @@
     "buildName" : "selenium-testng-allure-maven"
   } ],
   "categories" : {
-    "total" : 0,
-    "items" : [ ]
+    "total" : 1,
+    "items" : [ {
+      "uid" : "bdbf199525818fae7a8651db9eafe741",
+      "name" : "Test defects",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 1
+      }
+    } ]
   },
   "launches" : [ ]
 }
