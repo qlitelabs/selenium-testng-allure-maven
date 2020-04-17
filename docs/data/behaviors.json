@@ -1,0 +1,21 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Check Credentials",
+    "children" : [ {
+      "name" : "checkValidLogin",
+      "uid" : "2c0f3addd79ee329",
+      "parentUid" : "a861a3606168f6e1e2c72a200c4e5cf3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587150146779,
+        "stop" : 1587150149867,
+        "duration" : 3088
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a861a3606168f6e1e2c72a200c4e5cf3"
+  } ],
+  "name" : "behaviors"
+}
