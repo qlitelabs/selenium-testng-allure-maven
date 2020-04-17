@@ -9,6 +9,7 @@ pipeline{
         stage('Test') {
             steps {
                 sh 'mvn clean verify -P grid -DsuiteXmlFile=smoke.suite.xml'
+                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
             }
             post {
                 success{
