@@ -41,5 +41,5 @@ jobs:
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: master # The branch the action should deploy to.
-        FOLDER: ./target/site/allure-maven-plugin # The folder the action should deploy.
+        FOLDER: target/site/allure-maven-plugin # The folder the action should deploy.
         TARGET_FOLDER: docs
