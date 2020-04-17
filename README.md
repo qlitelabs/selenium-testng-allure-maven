@@ -1,5 +1,9 @@
 # Selenium setup with TestNG using Maven and Allure reports
 
+## Project Status
+
+![Java CI with Maven](https://github.com/qlitelabs/selenium-testng-allure-maven/workflows/Java%20CI%20with%20Maven/badge.svg)
+
 ## Pre-requisite
 
 - JDK 1.8 or higher must be installed.
