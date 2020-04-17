@@ -28,9 +28,9 @@ jobs:
       if: always()
       with:
         name: allure-report
-        path: ./allure-report
+        path: ./target/site/allure-maven-plugin
     - name: Deploy report
-      uses: JamesIves/github-pages-deploy-action@3.1.0
+      uses: JamesIves/github-pages-deploy-action@3.4.8
       if: always()
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
