@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('Test') {
             steps {
-                sh 'mvn clean verify allure-report -P localgrid -DsuiteXmlFile=smoke.suite.xml'
+                sh 'mvn clean verify allure:report -P localgrid -DsuiteXmlFile=smoke.suite.xml'
             }
             post {
                 success{
