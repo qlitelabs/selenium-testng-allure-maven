@@ -1,17 +1,9 @@
 version: 2.1
-
 orbs:
-  maven: circleci/maven@0.0.12
-
+  saucelabs: saucelabs/connect@volatile
 workflows:
-  browser_tests:
+  basic_workflow:
     jobs:
-      - sauce-connect/with_proxy:
-          name: Chrome Tests
+      - saucelabs/with_proxy:
           steps:
-            - run: mvn verify -B -Dsauce.browser=chrome  -Dsauce.tunnel="chrome"
-          tunnel_identifier: chrome
-  maven_test:
-    jobs:
-      - maven/test: # checkout, build, test, and upload test results
-          command: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml'
+            - run: mvn clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml
