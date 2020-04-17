@@ -60,6 +60,14 @@
         </profile>
 
         <profile>
+            <id>localgrid</id>
+            <properties>
+                <seleniumGridURL>http://172.17.0.1:4444/wd/hub</seleniumGridURL>
+                <remote>true</remote>
+            </properties>
+        </profile>
+
+        <profile>
             <id>parallelSuite</id>
             <properties>
                 <suiteXmlFile>smoke.parallel.suite.xml</suiteXmlFile>

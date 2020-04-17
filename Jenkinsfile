@@ -8,8 +8,7 @@ pipeline{
     stages{
         stage('Test') {
             steps {
-                sh 'mvn clean verify -P grid -DsuiteXmlFile=smoke.suite.xml'
-                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
+                sh 'mvn clean verify allure-report -P localgrid -DsuiteXmlFile=smoke.suite.xml'
             }
             post {
                 success{
