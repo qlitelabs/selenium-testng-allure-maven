@@ -1,0 +1,1 @@
+{"uuid":"35c3b322-afdc-4e61-9f83-b8d6e27ae1e0","name":"com.qlitelabs.base.TestBase.closeDriverObjects","description":"","start":1587134323063,"stop":1587134323125,"children":["76162325-9741-45fe-9698-56499234950f"],"afters":[{"name":"closeDriverObjects","status":"passed","stage":"finished","description":"","start":1587134323066,"stop":1587134323125}]}
