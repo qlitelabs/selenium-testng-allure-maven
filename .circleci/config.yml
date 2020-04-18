@@ -6,7 +6,7 @@ jobs: # a collection of steps
 
     docker: # run the steps with Docker
       - image: circleci/openjdk:8-jdk-stretch  # ...with this image as the primary container; this is where all `steps` will run
-      - image: selenium/standalone-chrome:3.11.0
+      # - image: selenium/standalone-chrome:3.11.0
     steps: # a collection of executable commands
 
       - checkout # check out source code to working directory
@@ -29,11 +29,11 @@ jobs: # a collection of steps
      
       - run:
           name: install selenium-hub
-          command: docker run -d --rm -p 4444:4444 --net grid --name selenium-hub selenium/hub:3.11.0
+          command: docker run -d --rm -p 4444:4444 --net grid --name selenium-hub selenium/hub:latest
           
       - run:
           name: install selenium-node
-          command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
+          command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:latest
       
       - run: mvn clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml # run the actual tests
       
