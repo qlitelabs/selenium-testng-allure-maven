@@ -42,8 +42,11 @@ jobs: # a collection of steps
           command: |
             mkdir -p ~/test-results/junit/
             find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} ~/test-results/junit/ \;
+      - run:
+          name: Save Allure report
+          command: |
             mkdir -p ~/allure-report/
-            find . -type f -regex ".*/target/site/allure-maven-plugin/*" -exec cp {} ~/allure-report/ \;
+            cp -R target/site/allure-maven-plugin/ ~/allure-report/
           when: always
       - store_test_results:
           path: ~/test-results
