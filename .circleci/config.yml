@@ -35,7 +35,7 @@ jobs: # a collection of steps
           name: install selenium-node
           command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
       
-      - run: mvn clean verify allure:report -P localgrid -DsuiteXmlFile=smoke.suite.xml # run the actual tests
+      - run: mvn clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml # run the actual tests
       
       - store_test_results: # uploads the test metadata from the `target/surefire-reports` directory so that it can show up in the CircleCI dashboard. 
       # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
