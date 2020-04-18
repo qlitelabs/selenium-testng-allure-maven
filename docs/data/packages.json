@@ -4,13 +4,13 @@
     "name" : "com.qlitelabs.tests.LoginTests",
     "children" : [ {
       "name" : "checkValidLogin",
-      "uid" : "79c2109bcc7674da",
+      "uid" : "564961572ecf8705",
       "parentUid" : "55ccc58c658e1d5e457b58d884caf94e",
       "status" : "passed",
       "time" : {
-        "start" : 1587171099978,
-        "stop" : 1587171102977,
-        "duration" : 2999
+        "start" : 1587171411897,
+        "stop" : 1587171414967,
+        "duration" : 3070
       },
       "flaky" : false,
       "parameters" : [ ]
