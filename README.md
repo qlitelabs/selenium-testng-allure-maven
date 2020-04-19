@@ -4,6 +4,7 @@
 
 ![GitHub Project Status](https://github.com/qlitelabs/selenium-testng-allure-maven/workflows/Java%20CI%20with%20Maven/badge.svg)
 [![CircleCI Status](https://circleci.com/gh/qlitelabs/selenium-testng-allure-maven/tree/master.svg?style=svg)](https://circleci.com/gh/qlitelabs/selenium-testng-allure-maven/tree/master)
+[![Build Status](https://dev.azure.com/modqlitelabs/modqlitelabs/_apis/build/status/qlitelabs.selenium-testng-allure-maven?branchName=master)](https://dev.azure.com/modqlitelabs/modqlitelabs/_build/latest?definitionId=1&branchName=master)
 
 ## Pre-requisite
 
